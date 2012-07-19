@@ -4,7 +4,9 @@ Ticketee::Application.routes.draw do
 
   root :to => "projects#index"
 
-  resources :projects
+  resources :projects do
+    resources :tickets
+  end
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
