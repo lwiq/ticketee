@@ -24,7 +24,8 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-  gem 'rspec-rails', '~> 2.5'
+ # gem 'rspec-rails', '~> 2.5'
+  gem 'rspec-rails'
 end
 
 group :test do
