@@ -28,6 +28,8 @@ group :test, :development do
   gem 'rspec-rails'
 end
 
+gem 'devise', '~> 1.4.3'
+
 group :test do
   gem 'cucumber-rails', '= 1.0.6'
   gem 'capybara'
