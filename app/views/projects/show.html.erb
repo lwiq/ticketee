@@ -1,7 +1,9 @@
 <% title(@project.name, "Projects") %>
 
-<%= link_to "Edit Project", edit_project_path(@project) %>
-<%= link_to "Delete Project", @project, :confirm => "are you sure?", :method => :delete %>
+<%= admins_only do %>
+  <%= link_to "Edit Project", edit_project_path(@project) %>
+  <%= link_to "Delete Project", @project, :confirm => "are you sure?", :method => :delete %>
+<% end %>
 <%= link_to "New Ticket", new_project_ticket_path(@project) %>
 
 <ul id='tickets'>
