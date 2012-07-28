@@ -30,6 +30,7 @@ group :test, :development do
 end
 
 gem 'devise', '~> 1.4.3'
+gem 'cancan'
 
 group :test do
   gem 'cucumber-rails', '= 1.0.6'
