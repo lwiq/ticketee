@@ -32,6 +32,8 @@ end
 gem 'devise', '~> 1.4.3'
 gem 'cancan'
 
+gem 'paperclip'
+
 group :test do
   gem 'cucumber-rails', '= 1.0.6'
   gem 'capybara'
